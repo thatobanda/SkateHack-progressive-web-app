@@ -1,0 +1,120 @@
+<?
+$speed = '';
+
+		
+
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Skate </title>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    
+    <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#2F3BA2">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+  
+    <meta name="mobile-web-app-capable" content="yes">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="Progressive Web Application">
+    <link rel="apple-touch-icon" href="./images/icons/apple-touch-icon.png">
+     <meta name="theme-color" content="#2F3BA2">
+
+ 
+   
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+  <div class="app app__layout">
+    <header>
+      <span class="header__icon">
+        <svg class="menu__icon no--select" width="24px" height="24px" viewBox="0 0 48 48" fill="#fff">
+          <path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path>
+        </svg>
+      </span>
+
+      <span class="header__title no--select">Skate</span>
+	  
+	 
+
+    </header>
+ 
+    <div class="menu">
+      <div class="menu__header">
+	  <img src="images/pic.jpg" width="280px" height="148px" ></img>
+	 </div>
+      <ul class="menu__list">
+         <li>
+          <a target="_blank" rel="noopener" href="index.html">Home</a>
+        </li>
+         <li>
+          <a target="_blank" rel="noopener" href="gauges.html">View Gauges</a>
+        </li>
+      </ul>
+    </div>
+    <div class="menu__overlay"></div>
+	
+	
+	
+	
+<div class="paper">
+  
+  <h>Skate</h>
+   
+  <p>Speed<?echo $speed?></p> <br/> 
+  <p>Deceleration</p> <br/> 
+  <p>Acceleration</p> <br/> 
+  <p>Altitude</p> <br/> 
+  <p>Falls</p> <br/> 
+  <p>Trick name</p> <br/> 
+  <div class="space"></div>
+ </div>
+
+ 
+
+
+ 
+ 
+<div class="paper" style="padding:20px;>
+  <h>Weather info</h>
+    <style="width:325px; height:175px;  font-size:16pt;">
+ <p class="location-container"><span class="location">
+ </span>   </p>
+
+	  
+
+		<div class="weather-data">
+			<p class="temp">
+			 <span class="description"> </span>  <br>
+			 Min Temp:<span class="actual-temp_max"></span>  <br>
+			Max Temp: <span class="actual-temp"> </span>  
+			<br> <br>
+			</p>
+			 
+			<p class="temp">Humidity:<span class="humidity"> </span>   <br>
+			 Wind Speed:<span class="wind"></span></p>
+			 
+			 <p class="temp">Clouds:<span class="clouds"> </span>   <br>
+			</p>
+		</div>
+		
+	
+  
+ </div>
+ 
+
+ 
+  <!-- JS Files  -->
+  <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.7.0/firebase-database.js"></script>
+
+  
+  <script src="./js/app.js"></script>
+ <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/main.js"></script>
+  <script src="./js/menu.js"></script>
+
+ 
+  </body>
+</html>
