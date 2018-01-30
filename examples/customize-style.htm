@@ -1,0 +1,112 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>SkateHacks Gauges</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <style>
+      body {
+        text-align: center;
+				background:#e8d0d1;
+				;
+
+      }
+
+      #g1, #g2, #g3, #g4, #g5, #g6 {
+        width:200px; height:160px;
+        display: inline-block;
+        margin: 1em;
+		text-color:black;
+      }
+
+      p {
+        display: block;
+        width: 450px;
+        margin: 2em auto;
+        text-align: left;
+      }
+    </style>
+     
+	</head>
+  <body>
+    <div id="g1"></div>
+    <div id="g2"></div>
+    <div id="g3"></div>
+    <div id="g4"></div>
+    <div id="g5"></div>
+    <div id="g6"></div>
+
+    <script src="../raphael-2.1.4.min.js"></script>
+    <!--<script src="../justgage-1.0.1.js"></script>-->
+    <script src="../justgage.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+
+      var g1, g2, g3, g4, g5, g6;
+
+      var g1 = new JustGage({
+        id: "g1",
+        value: 70,
+        min: 0,
+        max: 100,
+        title: "Speed",
+		
+        label: "km/h",
+        gaugeWidthScale: 0.6
+      });
+
+      var g2 = new JustGage({
+        id: "g2",
+        value:50,
+        min: 0,
+        max: 100,
+        title: "Deceleration",
+        label: "km/h",
+        shadowOpacity: 1,
+        shadowSize: 5,
+        shadowVerticalOffset: 10
+      });
+
+      var g3 = new JustGage({
+        id: "g3",
+        value:100,
+        min: 0,
+        max: 100,
+        title: "Aceleration",
+        label: "km/h",
+        levelColors: [
+          "#00fff6",
+          "#ff00fc",
+          "#1200ff"
+        ]
+      });
+
+      var g4 = new JustGage({
+        id: "g4",
+        value: 30,
+        min: 0,
+        max: 100,
+        title: "Altitude",
+		label: "km/h",
+        hideMinMax: true
+      });
+
+
+    
+
+
+
+    });
+    </script>
+  </body>
+   <ul>
+         <h3>
+          <a target="_blank" rel="noopener" href="index.html">Home</a>
+        </h3>
+		 
+		 
+      </p>
+  
+  
+</html>
